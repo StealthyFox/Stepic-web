@@ -1,9 +1,11 @@
+'''
+Измените ваш echo сервер так, что бы он работать одновременно с 10 клиентами. 
+'''
 import socket                                                                   
 import os
 
 s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)                          
 s.bind(('0.0.0.0', 2222))                                                       
-#s.listen(10)
 for i in range(10):
         pid = os.fork()
         if pid ==0:
