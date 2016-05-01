@@ -6,7 +6,7 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 pid  = os.fork()
 if pid == 0:
-        while True                                                        
+        while True:                                                        
                 conn, addr = s.accept()                                                 
                 #while True:                                                             
                 data = conn.recv(1024)                                          
