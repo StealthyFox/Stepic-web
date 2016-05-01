@@ -1,0 +1,3 @@
+$ ps -fA | grep python
+501 81651 12648   0  9:53PM ttys000    0:00.16 python -m SimpleHTTPServer
+kill 81651
